@@ -100,13 +100,9 @@ public class DialogueSystemGoogleASR {
 		
         new Thread() {
         	GoogleASR webSpeech = (GoogleASR) cm.lookup("googleASR");
+        	
         	// These are 5 API keys which work, but have limited numbers of times you can call them
-        	String key1 = "AIzaSyAwGYGBv_fbmkbW4ghbr_iUiiylXj15-YI";
-        	//String key1 = "AIzaSyC30jzD85oMQJmuVtPJoN9kMRM4uYR4YRY"; //new api key
-        	String key2 = "AIzaSyDXOjOCiM7v0mznDF1AWXXoR1ehqLeIB18"; 
-        	String key3 = "AIzaSyCDOkjKVuIKkMM_oic5gty7t91CWw8Y6ws";
-        	String key4 = "AIzaSyAP-uZb-zQWfoYMiJdI7xk9koneoQE6ED4";
-        	String key5 = "AIzaSyAGjjX-cusL8V7GZ_9H-1cHtVoWv9Naf4w";
+        	String key1 = "your_api_key_here";
             RecoCommandLineParser rclp = new RecoCommandLineParser(new String[] {"-M", "-G", key1});
             //RecoCommandLineParser rclp = new RecoCommandLineParser(new String[] {"-F", "resources/audio-samples/TakeTheRedBall.wav","-G", key1});
 
